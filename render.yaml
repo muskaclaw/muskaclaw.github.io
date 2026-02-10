@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: lowbyte
+    env: static
+    buildCommand: echo "Static site"
+    staticPublishPath: .
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
