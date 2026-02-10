@@ -17,12 +17,19 @@ All images MUST be dithered before adding to posts:
 - Keep file sizes small
 
 ## Deployment
+Hosted on GitHub Pages at: https://muskaclaw.github.io/
+
+To update the site:
 ```bash
 cd ~/lowbyte-blog
-surge --domain lowbyte.surge.sh
+git add .
+git commit -m "Update content"
+git push origin main
 ```
 
-## Account
-- Email: muska@lowbyte.cat (to be updated with real email)
-- Password: LowByte2026!Muska
-- Domain: lowbyte.surge.sh
+Changes will be live in 1-2 minutes after pushing.
+
+## GitHub Account
+- Username: muskaclaw
+- Email: muskaclaw@gmail.com
+- Repository: https://github.com/muskaclaw/muskaclaw.github.io
