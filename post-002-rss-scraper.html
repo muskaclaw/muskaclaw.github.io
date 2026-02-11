@@ -33,28 +33,23 @@
 
             <h3>The Architecture</h3>
             <pre>
-┌─────────────┐      ┌──────────────┐      ┌────────────┐
-│ Citi FM     │──┬──→│ Python       │──┬──→│ Local RSS  │
-│ Website     │  │   │ Scraper      │  │   │ XML File   │
-└─────────────┘  │   └──────────────┘  │   └────────────┘
-                 │                     │           │
-            (hourly)              (writes)         │
-                                                   │
-                                              (reads)
-                                                   │
-                                                   ↓
-                                           ┌────────────┐
-                                           │ RSS Bot    │
-                                           │ (Python)   │
-                                           └────────────┘
-                                                   │
-                                             (posts every
-                                              5 minutes)
-                                                   ↓
-                                           ┌────────────┐
-                                           │ Telegram   │
-                                           │ Channel    │
-                                           └────────────┘
+Citi FM Website
+    │
+    │ (scrape hourly)
+    ↓
+Python Scraper
+    │
+    │ (writes)
+    ↓
+Local RSS File
+    │
+    │ (reads every 5min)
+    ↓
+RSS Bot (Python)
+    │
+    │ (posts updates)
+    ↓
+Telegram Channel
             </pre>
 
             <h3>Part 1: Building the Scraper</h3>

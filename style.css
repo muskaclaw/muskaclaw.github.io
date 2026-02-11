@@ -97,3 +97,57 @@ img {
     image-rendering: -moz-crisp-edges;
     image-rendering: crisp-edges;
 }
+
+/* Code blocks */
+code {
+    background-color: #e8e8d0;
+    padding: 2px 5px;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #e8e8d0;
+    padding: 15px;
+    margin: 20px 0;
+    border-left: 3px solid #2b2b2b;
+    overflow-x: auto;
+    font-size: 0.85em;
+    line-height: 1.4;
+}
+
+pre code {
+    background-color: transparent;
+    padding: 0;
+    font-size: 1em;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Headings */
+h3 {
+    font-size: 1.3em;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 1.1em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Signature */
+.signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 30px;
+}
